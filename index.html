@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priy's Site</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico?v=2">
+</head>
+<body>
+    <div class="top-container">
+        <img class="top-cloud" src="images/cloud.png" alt="cloud-img">  
+        <h1 id="name">I'm Priyanka</h1>
+        <!-- <p>a <span class="stu">stu</span>dent</p> -->
+        <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
+        <!-- <img src="images/mountain.png" alt="mountain-img" class="mountain-image"> -->
+        <hr />
+    </div>
+    <div class="middle-container">
+        <div class="profile">
+            <img src="images/me.jpeg" alt="Priyanka's Profile Picture" class="profile-pic">
+          <h2 > I am Priyanka Saha. I am a Software Developer based in Kolkata. Looking  for opportunities to start up my careers.</h2>
+          <p>I did my B.tech in Electronics and Instrumentation from 
+            <a href="https://www.nit.ac.in/"> Narula Institute of Technology </a> .</p>
+          <p>I have passed my 10+2 from 
+            <a href="https://school.banglarshiksha.gov.in/ws/website/index/19113800402"> Rahara Bhabanath Institution </a>
+            for girls with Physics,Chemistry,Math and Computer Science .  
+          </p>
+          <p>
+            I am from Kolkata,West Bengal,India.
+          </p>
+        </div>
+        <hr>
+        <div class="skills">
+          <h2>My Skills.</h2>
+          <ul>
+            <li>C language</li>
+            <li>Java Language</li>
+            <li>HTML CSS JAVASCRIPT</li>
+          </ul>
+          <!-- <div class="skill-row">
+            <img class="skill-img" src="images/skills.png" alt="sills picture">
+            <h3>C Language</h3>
+            <p>I have an interest in coding that's why i started learning coding.I first learn C lamguage. C lamguage is the mother language of all laguages. That's why i learn C language first.</p>
+          </div>
+          <div class="skill-row">
+            <img class="java-img" src="images/java.png" alt="java picture">
+            <h3>Java Language</h3>
+            <p>Java is quite difficult Language. But once you learn it seem easy to you.</p>
+          </div> -->
+        </div>
+        <hr>
+        <div class="contact-me">
+          <h2>Get In Touch</h2>
+          <h3>For contact me</h3>
+          <p class="contact-massage">I am always available. You can contact me anytime. If anyone need me I am always ready to help. </p>
+          <a class="btn" href="mailto:iampriyankasaha2000@gmail.com">CONTACT ME</a>
+        </div>
+      </div>
+      <div class="bottom-container">
+        <p class="copy-right">&copy; 2022 priyanka Saha</p>
+        <a class="footer link" href="https://www.linkedin.com/in/priyanka-saha-2bb844207/">
+          <img src="./images/linkedin.png" alt="Linkedin logo" srcset="">
+        </a>  
+      </div>
+      <script>
+        let str = "I am Priyanka Saha"
+        let idx = 5;
+        function name(){
+          if(idx==18) idx=5;
+          else idx++;
+          document.getElementById("name").innerHTML=str.substring(0,idx);
+          document.getElementById("name").innerHTML+="|"
+        }
+        setInterval(name,800);
+      </script>
+</body>
+</html>
